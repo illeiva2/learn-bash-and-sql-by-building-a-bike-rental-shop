@@ -195,3 +195,5 @@ __vsc_original_prompt_command=${PROMPT_COMMAND:-}
 ./bike-shop.sh}
 ./bike-shop.sh
 ./bike-shop.sh
+./bike-shop.sh
+__vsc_prompt_cmd_original
