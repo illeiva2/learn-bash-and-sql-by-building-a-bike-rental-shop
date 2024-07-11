@@ -110,7 +110,7 @@ else
 # get customer's rentals
 # if no rentals
 # send to main menu
-        fi
+fi
 
 }
 

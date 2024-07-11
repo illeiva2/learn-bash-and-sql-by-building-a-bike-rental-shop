@@ -26,3 +26,4 @@ tasks:
 vscode:
   extensions:
     - CodeRoad.coderoad
+    - esbenp.prettier-vscode
