@@ -70,6 +70,7 @@ RENT_MENU() {
 
         # get new customer name
           echo -e "\nWhat's your name?"
+          read CUSTOMER_NAME
         # insert new customer
           fi
       fi
