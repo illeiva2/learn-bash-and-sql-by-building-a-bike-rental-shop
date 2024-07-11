@@ -108,6 +108,7 @@ if [[ -z $CUSTOMER_ID ]]
 MAIN_MENU "I could not find a record for that phone number."
 else
 # get customer's rentals
+CUSTOMER_RENTALS=$($PSQL "select bike_id, type, size from bikes inner JOIN rentals using(bike_id) inner join customers using(customer_id) where phone = '$PHONE_NUMBER' and date_returned is null order by bike_id")
 # if no rentals
 # send to main menu
 fi
