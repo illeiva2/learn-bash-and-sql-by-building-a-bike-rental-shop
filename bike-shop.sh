@@ -117,7 +117,10 @@ MAIN_MENU "You do not have any bikes rented."
 else
 # display rented bikes
 echo -e "\nHere are your rentals:"
-echo "$CUSTOMER_RENTALS"
+echo "$CUSTOMER_RENTALS" | while read BIKE_ID BAR TYPE BAR SIZE
+do
+echo "$BIKE_ID) $SIZE\" $TYPE Bike"
+done
 # ask for bike to return
 # if not a number
 # send to main menu
