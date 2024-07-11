@@ -464,3 +464,4 @@ echo -e "$(echo ' M e ' | sed 's/^ *| *$//g')."
 echo -E "$(echo ' M e ' | sed 's/^ *| *$//g')."
 echo "$(echo ' M e ' | sed 's/^ *| *$//g' -E)."
 echo "$(echo ' M e ' | sed -E 's/^ *| *$//g')."
+./bike-shop.sh
