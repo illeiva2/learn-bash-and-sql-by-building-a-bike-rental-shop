@@ -138,7 +138,9 @@ if [[ ! $BIKE_ID_TO_RETURN =~ ^[0-9]+$ ]]
       # send to main menu
       MAIN_MENU "You do not have that bike rented."
       else
-
+      # update date_returned
+      # set bike availability to true
+      # send to main menu
       fi
     fi
 fi
