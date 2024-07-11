@@ -111,7 +111,10 @@ else
 CUSTOMER_RENTALS=$($PSQL "select bike_id, type, size from bikes inner JOIN rentals using(bike_id) inner join customers using(customer_id) where phone = '$PHONE_NUMBER' and date_returned is null order by bike_id")
 echo "$CUSTOMER_RENTALS"
 # if no rentals
+if [[ -z $CUSTOMER_RENTALS ]]
+then
 # send to main menu
+fi
 fi
 
 }
