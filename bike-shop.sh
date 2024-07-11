@@ -136,6 +136,7 @@ if [[ ! $BIKE_ID_TO_RETURN =~ ^[0-9]+$ ]]
       if [[ -z $RENTAL_ID ]]
       then
       # send to main menu
+      MAIN_MENU "You do not have that bike rented."
       fi
     fi
 fi
