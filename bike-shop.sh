@@ -131,6 +131,7 @@ if [[ ! $BIKE_ID_TO_RETURN =~ ^[0-9]+$ ]]
       MAIN_MENU "That is not a valid bike number."
       else
       # check if input is rented
+      RENTAL_ID=$($PSQL "select rental_id from rentals inner join customers using(customer_id) where phone='$PHONE_NUMBER' and bike_id = $BIKE_ID_TO_RETURN and date_returned is null")
       # if input not rented
       # send to main menu
     fi
