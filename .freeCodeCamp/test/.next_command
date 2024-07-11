@@ -385,3 +385,12 @@ echo "$(echo ' M e ' | sed 's/ $//g')."
 echo "$(echo ' M e ' | sed 's/ $*//g')."
 echo "$(echo ' M e ' | sed 's/ *$//g')."
 echo "$(echo ' M e ' | sed 's/ *$|^ *//g')."
+sed -help
+-help sed
+help sed
+info sed
+sed -h
+sed --help
+manual sed
+sed manual
+man sed
