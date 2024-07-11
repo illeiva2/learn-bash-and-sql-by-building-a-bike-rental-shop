@@ -139,6 +139,7 @@ if [[ ! $BIKE_ID_TO_RETURN =~ ^[0-9]+$ ]]
       MAIN_MENU "You do not have that bike rented."
       else
       # update date_returned
+      RETURN_BIKE_RESULT=$($PSQL "UPDATE rentals SET date_returned = NOW() WHERE rental_id=$RENTAL_ID")
       # set bike availability to true
       # send to main menu
       fi
